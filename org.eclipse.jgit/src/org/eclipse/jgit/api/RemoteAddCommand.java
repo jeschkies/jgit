@@ -85,8 +85,9 @@ public class RemoteAddCommand extends GitCommand<RemoteConfig> {
 	 * @param name
 	 *            a remote name
 	 */
-	public void setName(String name) {
+	public RemoteAddCommand setName(String name) {
 		this.name = name;
+        return this;
 	}
 
 	/**
@@ -95,8 +96,9 @@ public class RemoteAddCommand extends GitCommand<RemoteConfig> {
 	 * @param uri
 	 *            an URL for the remote
 	 */
-	public void setUri(URIish uri) {
+	public RemoteAddCommand setUri(URIish uri) {
 		this.uri = uri;
+        return this;
 	}
 
 	/**
